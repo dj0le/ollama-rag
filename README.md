@@ -16,9 +16,9 @@ This is an ongoing work in progress and proof of concenpt, it might be broken. Y
 
    - Install python
 
-   ```
-   sudo apt-get install python3
-   ```
+     ```
+     sudo apt-get install python3
+     ```
 
    - Check version / verify installation:
      ```
