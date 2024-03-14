@@ -44,8 +44,9 @@ This is an ongoing work in progress and proof of concenpt, it might be broken. Y
      ollama list
      ```
 
-3. Install Docker Engine or Docker Desktop:  
-   [Docker Install Docs](https://docs.docker.com/engine/install/)
+3. Install Docker Engine or Docker Desktop:
+
+   - [Docker Install Docs](https://docs.docker.com/engine/install/)
 
 4. clone this repo, then:
    - install all from requirements.txt
