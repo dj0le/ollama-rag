@@ -2,28 +2,31 @@
 
 ## description:
 
-Local LLM that can access specific and specialized knowledge it otherwise doesn't have access to. Data is derived from urls or pdf files that you provide, and stored as a RAG in a Postgres vector db. It can output to the command line, or to a web ui via streamlit or gradio. The embeddings are permanently stored in the db so the knowledge is persistent and permanently available.
+Local LLM that can access specific and specialized knowledge it otherwise doesn't have access to.
 
-=========
+Data is derived from urls or pdf files that you provide, and stored as a RAG in a Postgres vector db. It can output to the command line, or to a web ui via streamlit or gradio. The embeddings are permanently stored in the db so the knowledge is persistent and permanently available.
 
 ## general information:
 
 This is an ongoing work in progress and proof of concenpt, it might be broken. You might have to troubleshoot it, google answers etc, to get it to run. It is meant for experimentation and will change over time as I add more to it.
 
-=========
+## basic install:
 
-## basic implementation guide:
+1. Python
 
-1. Python  
-   -Install python
+   - Install python
+
    ```
    sudo apt-get install python3
    ```
+
    - Check version / verify installation:
      ```
      python3 --version
      ```
+
 2. Ollama
+
    - Install Ollama
      ```
      curl -fsSL https://ollama.com/install.sh | sh
@@ -40,8 +43,10 @@ This is an ongoing work in progress and proof of concenpt, it might be broken. Y
      ```
      ollama list
      ```
+
 3. Install Docker Engine or Docker Desktop:  
    [Docker Install Docs](https://docs.docker.com/engine/install/)
+
 4. clone this repo, then:
    - install all from requirements.txt
      ```
@@ -52,8 +57,6 @@ This is an ongoing work in progress and proof of concenpt, it might be broken. Y
    - run the python apps:
      - app1.py: command line only, you need to add your updates manually to the code to change the urls and search questions
      - app2.py: gradio ui version
-
-=========
 
 ## next steps:
 
