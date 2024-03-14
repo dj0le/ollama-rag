@@ -4,11 +4,11 @@
 
 Local LLM that can access specific and specialized knowledge it otherwise doesn't have access to.
 
-Data is derived from urls or pdf files that you provide, and stored as a RAG in a Postgres vector db. It can output to the command line, or to a web ui via streamlit or gradio. The embeddings are permanently stored in the db so the knowledge is persistent and permanently available.
+Data is derived from urls or pdf files that you provide, and stored as a RAG in a Postgres vector db. It can output to the command line, or to a web ui via streamlit or gradio. The embeddings in the db keep the knowledge persistent and permanently available.
 
 ## general information:
 
-This is an ongoing work in progress and proof of concenpt, it might be broken. You might have to troubleshoot it, google answers etc, to get it to run. It is meant for experimentation and will change over time as I add more to it.
+This is an ongoing work in progress and proof of concept project. Not everything is setup yet, and will be added in the future. You might have to troubleshoot it, google answers etc, to get it to run on your specific setup. It is meant for experimentation and will change over time... hopefully for the better.
 
 ## basic install:
 
@@ -31,7 +31,7 @@ This is an ongoing work in progress and proof of concenpt, it might be broken. Y
      ```
      curl -fsSL https://ollama.com/install.sh | sh
      ```
-   - add a coding model (I used mistral-openorca)
+   - add a coding model (I used mistral-openorca, but you can use any from their models list, or from hugging-face if you know how to add them manually)
      ```
      ollama pull mistral-openorca
      ```
@@ -54,7 +54,7 @@ This is an ongoing work in progress and proof of concenpt, it might be broken. Y
      pip install -r requirements.txt
      ```
    - compose the docker file
-   - I used a generic postgres/postgres name/pw. Can be changed in the compose yml file
+   - I used postgres/postgres for the name & pw. Change as needed in the yml file
    - run the python apps:
      - app1.py: command line only, you need to add your updates manually to the code to change the urls and search questions
      - app2.py: gradio ui version
